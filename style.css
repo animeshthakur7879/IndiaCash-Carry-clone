@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+    transition: all ease-in-out 0.3s
+}
+.fixed-navbar{
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    
+}
+.navbar{
+    width: 100%;
+    height: 10vh;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 3%;
+    position: fixed;
+    background-color: white;
+}
+.navbar input{
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    /* margin-left: 20px; */
+    background-color: #F5F5F5;
+    padding-inline: 30px;
+}
+.navbar button{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E32228;
+    color: white;
+    margin: 0px 10px;
+}
+.navbar img{
+    width: 50px;
+    margin-right: 5px;
+}
+.navbar i{
+    font-size: 20px;
+}
+
+/* Hero-section */
+.hero-section{
+    width: 100%;
+    height: 95vh;
+    background-image: url(./assets/landing-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-block-start: 80px;
+    text-align: center;
+    padding-inline: 20px;
+    /* margin-top: 10vh; */
+}
+.hero-section img{
+    width: 300px;
+}
+.hero-section h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.hero-section p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.btn-section button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E32228;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.btn-section button:first-child:hover{
+    background-color: #ad1c21;
+}
+.btn-section button:nth-child(2){
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+.btn-section button:nth-child(2):hover{
+    background-color: white;
+    color: #E32228;
+}
+
+/* Location section */
+.location-section{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color:blueviolet; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.location-section h1{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.location-section p{
+    margin-top: 20px;
+}
+.location-grid{
+    width: 75%;
+    height: 50vh;
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: 1.3fr 1fr;
+    grid-gap: 20px;
+}
+.card{
+    background-color :#E32228;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    padding-block-start: 20px;
+    border-radius: 10px;
+}
+.card p{
+    margin-top: 10px;
+}
+.location-grid-2{
+    width: 70%;
+    height: 28vh;
+    /* background-color:bisque; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.card-section{
+    width: 80%;
+    height: 28vh;
+    /* background-color: chocolate; */
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 20px;
+}
+.location-section #lastp{
+    padding-inline: 20px;
+    text-align: center;
+}
+.card:hover{
+    background-color: #ad1c21;
+}
+
+/* Work Section */
+
+.work-section{
+    width: 100%;
+    height: 210vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: crimson; */
+}
+.work-section h1{
+    font-size: 45px;
+    font-weight: 600;
+}
+.work-section button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E32228;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+.work-section button:hover{
+    background-color: #ad1c21;
+}
+.work-grid{
+    width: 100%;
+    height: 180vh;
+    /* background-color: blueviolet; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4 , 1fr);
+    grid-gap: 10px;
+}
+.text-card{
+    /* background-color:cadetblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+.text{
+    width: 60%;
+}
+.text p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.text h1{
+    font-size: 35px;
+}
+#text1 .text{
+    margin-right: 50px;
+}
+#text2{
+    align-items: flex-start;
+}
+#text2 .text{
+    margin-left: 50px;
+}
+#text3 .text{
+    margin-right: 50px;
+}
+#text4{
+    align-items: flex-start;
+}
+#text4 .text{
+    margin-left: 50px;
+}
+.image-card{
+    /* background-color: chocolate; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.image-card img{
+    width: 400px;
+}
+#imgcard1{
+    justify-content: flex-start;
+    padding-inline-start: 100px;
+}
+#imgcard2{
+    padding-inline-end: 100px;
+}
+#imgcard3{
+    justify-content: flex-start;
+    padding-inline-start: 100px;
+}
+#imgcard4{
+    padding-inline-end: 100px;
+}
+.image-card:nth-child(2) img{
+    width: 220px;
+}
+
+.footer-section{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-section{
+    width: 60%;
+}
+.list-section ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.list-section ul li:hover{
+    color: darkgreen;
+}
+
+/* Resposive */
+@media(max-width:768px){
+    .navbar input{
+        width: 50%;
+    }
+    .navbar i{
+        display: none;
+    }
+    .location-grid{
+        width: 100%;
+        height: 160vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8 , 1fr);
+        grid-gap: 20px;
+    }
+    .location-grid .card:first-child{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .location-grid .card:nth-child(2){
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .location-grid .card:nth-child(3){
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .location-grid .card:nth-child(4){
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .location-grid .card:nth-child(5){
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .location-grid .card:nth-child(6){
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    .location-grid .card:nth-child(7){
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    .location-grid .card:last-child{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    .card{
+        padding-inline: 10px;
+    }
+    .location-grid{
+        padding-inline: 20px;
+    }
+    .location-grid-2{
+        width: 100%;
+        height: 60vh;
+        padding-inline: 20px;
+    }
+    .card-section{
+        width: 100%;
+        height: 60vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3 , 1fr);
+    }
+    .work-section{
+        margin-top: 30px;
+    }
+    .work-grid{
+        margin-top: 30px;
+        width: 100%;
+        height: 200vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8 , 1fr);
+    }
+    .text{
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+        padding-inline: 50px;
+    }
+    .text h1{
+        font-size: 30px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    #text1 .text{
+        margin: 0px;
+    }
+    #text2{
+        align-items: center;
+    }
+    #text2 .text{
+        margin: 0px;
+    }
+    #text3 .text{
+        margin: 0px;
+    }
+    #text4{
+        align-items: center;
+    }
+    #text4 .text{
+        margin: 0px;
+    }
+    #imgcard1{
+        justify-content: center;
+        padding: 0px;
+        grid-row: 1/2;
+    }
+    #text1{
+        grid-row: 2/3;
+    }
+    #imgcard2{
+        justify-content: center;
+        padding: 0px;
+        grid-row: 3/4;
+    }
+    #text2{
+        grid-row: 4/5;
+    }
+    #imgcard3{
+        justify-content: center;
+        padding: 0px;
+        grid-row: 5/6;
+    }
+    #text3{
+        grid-row: 6/7;
+    }
+    #imgcard4{
+        justify-content: center;
+        padding: 0px;
+        grid-row: 7/8;
+    }
+    #text4{
+        grid-row: 8/9;
+    }
+    .image-card img{
+        width: 300px;
+    }
+    .image-card:nth-child(2) img{
+        width: 180px;
+    }
+}
